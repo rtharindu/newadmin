@@ -2,7 +2,7 @@ import type { DashboardStats, ChartDataPoint, ReconciliationData, Notification }
 import { doctorApi } from "./doctorApi"
 import { hospitalApi } from "./hospitalApi"
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL
 
 export const dashboardApi = {
   getStats: async (): Promise<DashboardStats> => {
